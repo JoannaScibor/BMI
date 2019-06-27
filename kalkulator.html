@@ -1,0 +1,55 @@
+<! DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<link rel = "stylesheet" href="style2.css">
+<script type="text/javascript">
+function bmi(){
+var wzrost=document.forms['bmi'].wzrost.value;
+var waga=document.forms['bmi'].waga.value;
+var wynikbmi=Math.round(Number(waga)/(Number(wzrost)*Number(wzrost)*0.0001));
+document.getElementById('guzik').innerHTML="Twoje BMI wynosi: "+wynikbmi+".";
+if(wynikbmi<24.99 && wynikbmi>=18.99) {
+document.getElementById('nag').innerHTML="<span style='font-size:29px; color:lime;'>Brawo! Twój wynik BMI jest w normie!</span>";
+}
+if(wynikbmi<18.99) {
+document.getElementById('nag').innerHTML="<span style='font-size:29px; color:red;'>Niestety masz zbyt niskie BMI!</span>";
+}
+if(wynikbmi>24.99) {
+document.getElementById('nag').innerHTML="<span style='font-size:29px; color:red;'>Niestety Twoje BMI jest zbyt wysokie!</span>";
+}
+}
+</script>
+</head>
+<body>
+<h1>Kalkulator BMI</h1>
+<div id="poj0">
+
+		<div id="poj1"><p >
+	
+	
+		<form action="" id="bmi">
+			<span id="nag"><h2>Twoje BMI</h2></span></br>
+			<label>Podaj swój wzrost (w cm): <input type="text" name="wzrost"></label></br>
+			<label>Podaj swoją wagę (w kg): <input type="text" name="waga"></label></br></br>
+			<input type="button" name="wyslij"onclick="bmi()" value="Oblicz swoje BMI">
+			
+	
+	
+	
+		</form>
+	
+	<span id="guzik">????</span>
+	
+	
+	
+	
+	</p></div>
+	<a href="form.php"><div id="poj2"><p > <span style="font-size:24px;">Rozpocznij indywidualnie skomponowaną dietę!</span></br></br> Wypełnij formularz i skorzystaj z porady doradcy żywieniowego!</span></p></div></a>
+<a href="https://www.poradnikzielarski.pl/ziola-lecznicze/"><div id="poj3"><p>Odkryj moc natury!</br></p>
+	</div></a>
+</div>
+<div id="stopka">Made by JŚ (czerwiec 2019)</div>
+
+</body>
+
+</html>

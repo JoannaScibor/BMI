@@ -1,0 +1,89 @@
+h1 {
+	
+	font-size:75px;
+	text-align:center;
+	text-shadow: 1px 2px gray;
+}
+#poj0 {
+	margin-left:30px;
+	margin-right:auto;
+}
+#poj1, #poj2, #poj3 {
+	float:left;
+	width:31%;
+	height:300px;
+	text-align:center;
+	vertical-align:middle;
+	border-left: double gray 5px;
+	border-radius: 25px;
+	font-weight: bold;
+	
+}
+#kos1 {
+	width:100%;
+	height:100%;
+	margin-top:0px;
+	
+}
+p {
+
+	text-align:center;
+	margin-top:100px;
+
+}
+#poj1 {
+	background-color:#c4b7a6;
+	color:black;
+	font-size:45px;
+	
+}
+#poj1:hover {
+	background-color:black;
+	color:white;
+
+	
+}
+
+#poj2 {
+	background-color:darkblue;
+	color:gold;
+	text-align:right;
+	margin-top:150px;
+
+	
+}
+#poj2:hover {
+	background-color:yellow;
+	color:black;
+	text-align:right;
+	margin-top:150px;
+
+	
+}
+#poj3 {
+	background-image:URL(ziola.jpg);
+	color:black;
+	font-size:38px;
+	
+}
+#poj3:hover {
+	background-color:black;
+	color:darkgray;
+	
+}
+
+#wynik {
+	margin-top=0px;
+}
+#formatka {
+	margin-top:0px;
+	font-size:12px;
+	text-align:right;
+}
+#form {
+text-align:right;	
+}
+#stopka {
+	text-align:right;
+	clear:both;
+}
